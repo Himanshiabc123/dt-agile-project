@@ -8,7 +8,7 @@
     
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
- 
+
 </head>
 <body>
     <!-- Use "navbar navbar-expand-lg navbar-light bg-light" to create the horizontal navbar -->
@@ -97,9 +97,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="#">session</a></li>
-        <li><a href="#">Gender</a></li>
-        <li><a href="#">Geo</a></li>
+        <li><a href="#">set session</a></li>
+        <li><a href="#">Report</a></li>
+        <li><a href="#">Client</a></li>
       </ul>
     </div>
   </div>
@@ -112,46 +112,47 @@
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Dashboard</a></li>
         <li><a href="session_set.html">Set Session</a></li>
-        <li><a href="#section3">Gender</a></li>
-        <li><a href="#section3">Geo</a></li>
+        <li><a href="#section3">Report</a></li>
+        <li><a href="#section3">Clients</a></li>
       </ul><br>
     </div>
     <br>
-    
+
     <div class="col-sm-9">
       <div class="well">
-        <h4>Dashboard</h4>
-        <p>Some text..</p>
+        <h4><img src="img_girl.jpg" ><%= data.name %></h4>
+        <p><%= data.speciality %></p>
       </div>
       <div class="row">
         <div class="col-sm-3">
           <div class="well">
-            <h4>Users</h4>
-            <p>1 Million</p> 
+            <h4>Speciality</h4>
+            <p><%= data.speciality %></p> 
           </div>
         </div>
         <div class="col-sm-3">
           <div class="well">
-            <h4>Pages</h4>
-            <p>100 Million</p> 
+            <h4>Qualifications</h4>
+            <p><%= data.qualifications %></p> 
           </div>
         </div>
         <div class="col-sm-3">
           <div class="well">
-            <h4>Sessions</h4>
-            <p>10 Million</p> 
+            <h4>Experience</h4>
+            <p><%= data.experience %></p> 
           </div>
         </div>
         <div class="col-sm-3">
           <div class="well">
-            <h4>Bounce</h4>
-            <p>30%</p> 
+            <h4>Registration date</h4>
+            <p><%= data.registration_date %></p> 
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4">
           <div class="well">
+         <h4>Services</h4>
             <p>Text</p> 
             <p>Text</p> 
             <p>Text</p> 
@@ -159,9 +160,10 @@
         </div>
         <div class="col-sm-4">
           <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
+        <h4>Contact Details</h4>
+            <p>PhoneNo: <%= data.phone %></p> 
+            <p>Email: <%= data.email %></p> 
+            <p>Address: <%= data.address %></p> 
           </div>
         </div>
         <div class="col-sm-4">
